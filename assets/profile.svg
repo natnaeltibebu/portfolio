@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="200" cy="200" r="190" />
+    </clipPath>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="190" fill="#f3f4f6" />
+  
+  <!-- Person Silhouette - Simple placeholder -->
+  <g clip-path="url(#circle-clip)">
+    <rect x="0" y="0" width="400" height="400" fill="#e5e7eb" />
+    <circle cx="200" cy="150" r="70" fill="#9ca3af" />
+    <path d="M320,400 L80,400 L80,340 C80,280 140,230 200,230 C260,230 320,280 320,340 L320,400 Z" fill="#9ca3af" />
+  </g>
+  
+  <!-- Circle Border -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#2563eb" stroke-width="5" />
+</svg>

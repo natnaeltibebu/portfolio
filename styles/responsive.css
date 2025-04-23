@@ -1,0 +1,184 @@
+/* 
+   Responsive Styles for Natnael Tibebu's Portfolio
+   Author: Natnael Tibebu
+   Version: 1.0
+*/
+
+/* Mobile First Approach */
+
+/* Extra Small Devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-nav ul {
+        justify-content: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* Small Devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium Devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .hero-text {
+        margin-top: var(--spacing-xl);
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .about-highlights {
+        justify-content: center;
+    }
+}
+
+/* Large Devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra Large Devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: var(--container-width);
+    }
+}
+
+/* Navigation Menu for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .logo {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .nav-menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+    
+    .nav-item {
+        margin-bottom: var(--spacing-xs);
+    }
+}
+
+/* Hero Section Responsive */
+@media (max-width: 992px) {
+    .hero-section {
+        height: auto;
+        padding: 120px 0 var(--spacing-xxl);
+    }
+    
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: var(--spacing-xl);
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .image-container {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* About Section Responsive */
+@media (max-width: 768px) {
+    .about-highlights {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .highlight-item {
+        min-width: 100%;
+    }
+}
+
+/* Skills Section Responsive */
+@media (max-width: 768px) {
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Projects Section Responsive */
+@media (max-width: 576px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Section Responsive */
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .contact-info {
+        order: 2;
+    }
+    
+    .contact-form {
+        order: 1;
+    }
+}

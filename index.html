@@ -19,12 +19,14 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="with-background">
     <header id="header">
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="#hero">NT</a>
+                    <a href="#hero">
+                        <img src="assets/images/logo.svg" alt="Natnael Tibebu Logo" class="logo-img">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -50,19 +52,10 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <!-- Using the provided image represented as an SVG container -->
-                        <svg class="profile-image-container" viewBox="0 0 400 400">
-                            <defs>
-                                <clipPath id="profile-clip">
-                                    <circle cx="200" cy="200" r="190" />
-                                </clipPath>
-                            </defs>
-                            <foreignObject width="400" height="400" clip-path="url(#profile-clip)">
-                                <div xmlns="http://www.w3.org/1999/xhtml" class="profile-image-placeholder">
-                                    <!-- The actual image would be inserted here in a real environment -->
-                                </div>
-                            </foreignObject>
-                        </svg>
+                        <!-- Using the provided profile image -->
+                        <div class="profile-image">
+                            <img src="assets/images/profile.png" alt="Natnael Tibebu" class="profile-img">
+                        </div>
                     </div>
                 </div>
             </div>

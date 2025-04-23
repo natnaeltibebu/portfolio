@@ -8,24 +8,24 @@
 /* CSS VARIABLES */
 /* -------------- */
 :root {
-    /* Color Palette */
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary-color: #10b981;
-    --text-color: #111827;
-    --text-color-light: #4b5563;
-    --text-color-dark: #1f2937;
-    --bg-color: #ffffff;
-    --bg-color-alt: #f9fafb;
-    --bg-color-dark: #1f2937;
-    --border-color: #e5e7eb;
-    --success-color: #10b981;
-    --error-color: #ef4444;
-    --warning-color: #f59e0b;
+    /* Color Palette - Dark Theme with Orange Accent */
+    --primary-color: #FF6B00;
+    --primary-dark: #E05E00;
+    --secondary-color: #FF8C38;
+    --text-color: #FFFFFF;
+    --text-color-light: #E0E0E0;
+    --text-color-dark: #CCCCCC;
+    --bg-color: #121212;
+    --bg-color-alt: #1E1E1E;
+    --bg-color-dark: #0A0A0A;
+    --border-color: #333333;
+    --success-color: #4CAF50;
+    --error-color: #F44336;
+    --warning-color: #FFC107;
     
     /* Custom Colors */
-    --gradient-start: rgba(37, 99, 235, 0.1);
-    --gradient-end: rgba(16, 185, 129, 0.1);
+    --gradient-start: rgba(255, 107, 0, 0.1);
+    --gradient-end: rgba(255, 140, 56, 0.1);
     
     /* Typography */
     --font-primary: 'Poppins', sans-serif;
@@ -193,7 +193,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(18, 18, 18, 0.95);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
     backdrop-filter: blur(5px);
@@ -228,7 +228,7 @@ p {
 
 .nav-link {
     font-weight: 500;
-    color: var(--text-color-dark);
+    color: var(--text-color);
     position: relative;
     transition: color 0.3s ease;
 }
@@ -257,16 +257,14 @@ p {
 /* HERO SECTION */
 /* -------------- */
 .hero-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 80px; /* Header height */
-    background-image: url('../assets/images/background.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding-top: 100px; /* Header height */
+    padding-bottom: 50px;
+    background-color: var(--bg-color);
 }
 
 .hero-content {
@@ -281,26 +279,36 @@ p {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
-    margin-bottom: var(--spacing-sm);
+    font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .hero-text h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--text-color-light);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-color);
     margin-bottom: var(--spacing-md);
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--text-color-light);
     margin-bottom: var(--spacing-lg);
+    max-width: 600px;
 }
 
-.hero-btns {
+.hero-text p:first-of-type {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+}
+
+.hero-social {
     display: flex;
     gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
 }
 
 .hero-image {
